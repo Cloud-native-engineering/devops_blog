@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>TBZ Blog</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/new-post">New Post</a>
+        </nav>
+    </header>
+    <main>
+        <div class="post-container">
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.content }}</p>
+            <a href="/edit-post?id={{ post.id }}" class="btn">Edit</a>
+            <button id="delete-btn" class="btn">Delete</button>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
