@@ -1,4 +1,4 @@
-# DevOps - Create Pipeline for Sample Application# DevOps - Create Pi
+# DevOps - Create Pipeline for Sample Application
 
 > This sample application was forked from: [dev.azure.com/devopstbz](https://dev.azure.com/devopstbz/_git/FLASKBLOG)
 
